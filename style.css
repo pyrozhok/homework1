@@ -13,10 +13,11 @@ html {
 }
 
 .header {
-    background-image: url(image/fon-header.jpeg);
+    background-image: url(image/image.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
 
 .center {
@@ -24,22 +25,20 @@ html {
     padding-right: calc(50% - 600px);
 }
 
-.fon-stars {
-    position: absolute;
-    top: -333.46px;
-    left: 63px;
-    z-index: 1;
-}
 
 .linetop {
 width: 3122px;
-overflow-x: hidden;
+overflow: hidden;
+}
+
+.linetop__animation {
+    position: absolute;  
 }
 
 .header__content {
     padding-top: 196px;
     padding-bottom: 156px;
-  position: relative;
+ 
 }
 
 .header__content-title {
@@ -97,6 +96,10 @@ margin-top: 48px;
 
 .game {
 background-color: black;
+}
+
+.game__box {
+    padding-top: 94px;
 }
 
 .game__box-title {
