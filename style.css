@@ -9,6 +9,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 .header {
@@ -16,8 +17,6 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  
-   
 }
 
 .center {
@@ -29,17 +28,18 @@ html {
     position: absolute;
     top: -333.46px;
     left: 63px;
-  
+    z-index: 1;
 }
 
 .linetop {
 width: 3122px;
+overflow-x: hidden;
 }
 
 .header__content {
     padding-top: 196px;
     padding-bottom: 156px;
-    z-index: 1;
+  position: relative;
 }
 
 .header__content-title {
@@ -127,6 +127,12 @@ margin-bottom: 76px;
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
+}
+
+.cart-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 
@@ -306,7 +312,7 @@ background-image: url(image/linefooter.jpeg);
    
 }
 
-.line-text {
+.line__text {
     color: rgb(0, 0, 0);
 font-family: Montserrat;
 font-size: 24px;
