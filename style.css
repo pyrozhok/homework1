@@ -16,6 +16,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 100%;
 }
 
 .center {
@@ -30,6 +31,7 @@ html {
 
 .linetop__animation {
   position: absolute;
+  max-width: 100%;
 }
 
 .header__content {
@@ -256,7 +258,7 @@ html {
 
 .stargame {
   position: absolute;
-  width: 35.15px;
+  max-width: 100%;
   height: 35.15px;
   left: 1281.33px;
   top: 2363px;
@@ -265,7 +267,7 @@ html {
 
 .stargame2 {
   position: absolute;
-  width: 68.86px;
+  max-width: 100%;
   height: 68.86px;
   left: 1326.54px;
   top: 2396px;
@@ -300,11 +302,11 @@ html {
 }
 
 .line {
-  width: 1441px;
   height: 150px;
   background-image: url(image/linefooter.jpeg);
   padding-top: 61px;
   padding-left: 578px;
+  max-width: 100%;
 }
 
 .line__text {
@@ -315,11 +317,12 @@ html {
   line-height: 29px;
   letter-spacing: 0px;
   text-align: center;
+  max-width: 100%;
 }
 
 .starfooter {
   position: absolute;
-  width: 41px;
+  max-width: 100%;
   height: 41px;
   left: 1249px;
   top: 5684px;
@@ -327,16 +330,43 @@ html {
 
 .starfooter2 {
   position: absolute;
-  width: 69px;
+  max-width: 100%;
   height: 69px;
   left: 1319px;
   top: 5636px;
 }
 
+.cart1 {
+  max-width: 100%;
+}
+
+.cart2 {
+  max-width: 100%;
+}
+
+.cart3 {
+  max-width: 100%;
+}
+
+.cart4 {
+  max-width: 100%;
+}
+
+.cart5 {
+  max-width: 100%;
+}
+
+.cart6 {
+  max-width: 100%;
+}
+
 @media (max-width: 767px) {
   .header {
-    width: 376px;
-    height: 700px;
+    background-image: url(image/mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
   }
   .center {
     padding-left: 16px;
@@ -345,6 +375,16 @@ html {
   .header__content {
     width: 343px;
     height: 371px;
+  }
+  .header__content-button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 36px;
   }
   .header__content-title {
     font-size: 40px;
@@ -369,6 +409,9 @@ html {
   }
   .linetop {
     width: 1717px;
+    height: 51px;
+  }
+  .linetop__animation {
     height: 51px;
   }
   .mini-game__box-title {
@@ -398,5 +441,27 @@ html {
     line-height: 20px;
     letter-spacing: 0px;
     text-align: left;
+    margin-bottom: 32px;
+  }
+  .game-content__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .line {
+    height: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

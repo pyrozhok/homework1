@@ -1,7 +1,11 @@
 @media (max-width: 767px) {
+
     .header {
-        width: 376px;
-        height: 700px;
+        background-image: url(image/mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
     }
 
     .center {
@@ -12,7 +16,17 @@
     .header__content {
         width: 343px;
         height: 371px;
+    }
 
+    .header__content-button {
+        width: 285px;
+        height: 55px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 36px;
     }
 
     .header__content-title {
@@ -42,6 +56,11 @@
     .linetop {
         width: 1717px;
         height: 51px;
+    }
+
+    .linetop__animation {
+        height: 51px;
+        
     }
 
     .mini-game__box-title {
@@ -75,6 +94,31 @@
         line-height: 20px;
         letter-spacing: 0px;
         text-align: left;
+        margin-bottom: 32px;
+    }
+
+    .game-content__button {
+        width: 285px;
+        height: 55px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line {
+        height: 100px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
     }
 
 }
