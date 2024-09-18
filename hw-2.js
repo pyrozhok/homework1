@@ -49,13 +49,14 @@ let age = prompt("Сколько вам лет?");
 alert(age);
 
 // Задание 9
-let user = {  
-    name: "Kate",  
+let userName = {
+    name: "Kate",
     age: 20,
     isAdmin: false,
-    };  
+};
 
 // Задание 10
 
-let user = prompt ("Ваше имя?");
-alert (Привет, ИМЯ!)
+let user = prompt("Ваше имя?");
+user = yourName;
+alert("Привет, ${ yourName }")
