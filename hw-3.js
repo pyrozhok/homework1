@@ -13,7 +13,8 @@ if (ask = password) {
 //задание 2
 
 let c = 5
-If (c > 0 && c < 10 ); {
+
+if (c > 0 && c < 10 ) {
 	console.log ('Верно');
 } else {
 	console.log('Неверно');
@@ -21,9 +22,9 @@ If (c > 0 && c < 10 ); {
 
 //задание 3
 
-let c = 50;
+let d = 50;
 let e = 200;
-if (c > 100 || e > 100) {
+if (d > 100 || e > 100) {
     console.log ('Верно')
 } else {
     console.log ('Неверно')
@@ -39,7 +40,7 @@ alert(number(a) + number(b));
 
 //задание 5
 
-let monthNumber = prompt ('введите номер месяца');
+let monthNumber = Number(prompt ('введите номер месяца')) ;
 
 switch (monthNumber) {
     case 1:
