@@ -207,6 +207,7 @@ html {
 
 .mini-game {
     background-color: black;
+    position: relative;
 }
 
 .mini-game__box {
@@ -351,21 +352,18 @@ height: 150px;
 
 .starfooter {
     position: absolute;
-    // width: 41px;
     max-width: 100%;
     height: 41px;
-    left: 1249px;
-    top: 5684px;
+    right: calc(150px + (100vw - 1440px) / 2);
+    bottom: 45px;
 }
 
 .starfooter2 {
     position: absolute;
     max-width: 100%;
-    // width: 69px;
+    right: calc(52px + (100vw - 1440px) / 2);
+    bottom: 65px;
     height: 69px;
-    left: 1319px;
-    top: 5636px;
-
 }
 
 .cart1 {
@@ -391,5 +389,6 @@ height: 150px;
 .cart6 {
     max-width: 100%;
 }
+
 
 @import 'mobile';
