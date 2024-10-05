@@ -5,15 +5,15 @@
 //  например 6 и 6, то функция должна вернуть это 
 //  значение (в данном случае — 6).
 
-function min (a, b) {
-    if (a < b) {
-        return a;
-    } else {
-        return b;
-    }
-}
-console.log(min(8, 4));  
-console.log(min(6, 6));  
+// function min (a, b) {
+//     if (a < b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+// console.log(min(8, 4));  
+// console.log(min(6, 6));  
 
 // Задание 2
 // Напишите функцию, которая принимает число и возвращает:
@@ -22,15 +22,15 @@ console.log(min(6, 6));
 // Подсказка: четность проверяется с помощью условия 
 // n % 2 == 0
 
-function number(n) {
-    if (n % 2 === 0) {
-        return 'Число четное';
-    } else {
-        return 'Число нечетное';
-    }
-}
+// function number(n) {
+//     if (n % 2 === 0) {
+//         return 'Число четное';
+//     } else {
+//         return 'Число нечетное';
+//     }
+// }
 
-console.log(number(3));
+// console.log(number(3));
 
 
 // Задание 3
@@ -40,15 +40,15 @@ console.log(number(3));
 //  и возвращает квадрат этого числа значением — так, 
 //  чтобы потом это значение можно было использовать.
 
-function Square(number) {
-    console.log(number * number);
-}
+// function Square(number) {
+//     console.log(number * number);
+// }
 
-function squareNumber(n) {
-    return n * n;
-}
-let result = squareNumber(n);
-console.log(result); 
+// function squareNumber(n) {
+//     return n * n;
+// }
+// let result = squareNumber(n);
+// console.log(result); 
 
 // Задание 4
 // Создайте функцию, которая:
@@ -62,20 +62,20 @@ console.log(result);
 // Подсказка: можете выполнить это задание с помощью оператора 
 // if else.
 
-function userAge() {
-    let age = prompt("Сколько вам лет?");
-    age = Number(age);
+// function userAge() {
+//     let age = prompt("Сколько вам лет?");
+//     age = Number(age);
 
-    if (age < 0) {
-        alert("Вы ввели неправильное значение");
-    } else if (age >= 0 && age <= 12) {
-        alert("Привет, друг!");
-    } else if (age >= 13) {
-        alert("Добро пожаловать!");
-    } else {
-        alert("Вы ввели неправильное значение");
-    }
-}
+//     if (age < 0) {
+//         alert("Вы ввели неправильное значение");
+//     } else if (age >= 0 && age <= 12) {
+//         alert("Привет, друг!");
+//     } else if (age >= 13) {
+//         alert("Добро пожаловать!");
+//     } else {
+//         alert("Вы ввели неправильное значение");
+//     }
+// }
 
 // Задание 5
 // Напишите функцию, которая принимает на вход два числа,
@@ -88,14 +88,14 @@ function userAge() {
 // Если оба параметра — числа, то возвращает произведение
 //  данных чисел.
 
-function calc(a,b) {
-    if (isNaN(a) && isNaN(b)) {
-        return 'Одно или оба значения не являются числом';
-    } else {
-        return a * b;
-    }
-}
-console.log(calc(2, 3)); 
+// function calc(a,b) {
+//     if (isNaN(a) && isNaN(b)) {
+//         return 'Одно или оба значения не являются числом';
+//     } else {
+//         return a * b;
+//     }
+// }
+// console.log(calc(2, 3)); 
 
 
 // Задание 6
@@ -110,19 +110,19 @@ console.log(calc(2, 3));
 //  — число, возведенное в куб.Проверьте работу функции с 
 //  числами от 0 до 10.
 
-function number() {
-    let userNumber = prompt("Введите число:");
-    if (isNaN(userNumber)) {
-        return 'Переданный параметр не является числом'
-    } else {
-        '${userNumber} в кубе равняется ${userNumebr ** 3}'
-    }
-}
-   console.log(number());
+// function number() {
+//     let userNumber = prompt("Введите число:");
+//     if (isNaN(userNumber)) {
+//         return 'Переданный параметр не является числом'
+//     } else {
+//         '${userNumber} в кубе равняется ${userNumebr ** 3}'
+//     }
+// }
+//    console.log(number());
 
-   for (let i = 0; i <= 10; i++) {
-    console.log(number(i));
-}
+//    for (let i = 0; i <= 10; i++) {
+//     console.log(number(i));
+// }
 
 // Задание 7
 // Создайте два объекта, circle1 и circle2, каждый из которых 
@@ -134,22 +134,22 @@ function number() {
 // Метод getPerimeter
 // , который возвращает периметр окружности.
 
-const circle1 = {
-    radius: 5, 
-    getArea() {
-        return Math.PI * Math.pow(this.radius, 2);
-    },
-    getPerimeter() {
-        return 2 * Math.PI * this.radius;
-    }
-};
+// const circle1 = {
+//     radius: 5, 
+//     getArea() {
+//         return Math.PI * Math.pow(this.radius, 2);
+//     },
+//     getPerimeter() {
+//         return 2 * Math.PI * this.radius;
+//     }
+// };
 
-const circle2 = {
-    radius: 10, 
-    getArea() {
-        return Math.PI * Math.pow(this.radius, 2);
-    },
-    getPerimeter() {
-        return 2 * Math.PI * this.radius;
-    }
-};
+// const circle2 = {
+//     radius: 10, 
+//     getArea() {
+//         return Math.PI * Math.pow(this.radius, 2);
+//     },
+//     getPerimeter() {
+//         return 2 * Math.PI * this.radius;
+//     }
+// };
