@@ -62,8 +62,8 @@ console.log(arr);
 
 const arr = [9, 8, 7, 'a', 6, 5];
 arr.sort();
-arr = arr.filter(item => item !== 'string');
-console.log(arr);
+const filteredArr = arr.filter(item => typeof item === 'number');
+console.log(filteredArr);
 
 // Задание 7
 // Дан массив: [9, 8, 7, 6, 5]
@@ -176,11 +176,12 @@ function randomNum() {
 }
 
 const arr [];
-
 for (let i = 0; i < 10; i++) {
     arr.push(randomNum());
 }
+console.log(arr);
 
+const evenArr [];
 for (let i = 0; i < arr.length; i++) {
 if (arr[i] % 2 === 0) {
     evenArr.push(arr[i]);
