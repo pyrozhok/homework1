@@ -48,7 +48,20 @@ function userAsk() {
     }
 
     alert(`Реши задачку: ${difference()}`);
-    const result = num1 sign num2;
+
+       function calculateResult(num1, num2, sign) {
+        switch (sign) {
+            case '+':
+                return num1 + num2;
+            case '-':
+                return num1 - num2;
+            case '*':
+                return num1 * num2;
+            case '/':
+                return num1 / num2;
+        }
+    }
+    const result = calculateResult(num1, num2, sign);
 
       const userInput = +prompt('Ваш ответ?');
 
