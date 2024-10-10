@@ -1,5 +1,5 @@
 function text() {
-    let userInput = prompt (' введи текст');
+    let userInput = prompt (' Введи любой текст');
     let newText = userInput.split('').reverse().join('');
-    alert (`твой тект ${newText}`)
+    alert (`Твой текст ${newText}`)
 }
