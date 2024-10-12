@@ -72,7 +72,16 @@ console.log(random());
 // Math.random() возвращает случайное число от 
 // 0 (включительно) до 1 (не включая).
 
+function generateRandomArray(num) {
+    const length = Math.floor(num / 2);
+    const result = [];
 
+    for (let i = 0; i < length; i++) {
+        result.push(Math.floor(Math.random() * (num + 1)));
+    }
+    return result;
+}
+console.log(generateRandomArray(6));
 
 // Задание 7
 // Создать функцию, которая принимает два целых числа и
