@@ -18,15 +18,17 @@ const quiz = [
 
 function runQuiz(quiz){
     
-    let correctAnswer;
-    let userInput = +prompt (`ответь ${question}`);
+    let correctAnswer = 0;
 
     for (let i = 0; i < quiz.length; i++) {
+        let currentQuestion = quiz[i];
 
-       if (userInput === correctAnswer) {
-        correctAnswers++;
+        alert(`${currentQuestion.question}\n ${currentQuestion.options}`);
+        let userInput = +prompt ('введи номер ответа');
+
+       if (userInput === currentQuestion.correctAnswer) {
+        correctAnswer++;
     }
 }
-alert(`Количество правильных ответов: ${correctAnswers}`);
+    alert(`Количество правильных ответов: ${correctAnswer}`);
 }
-
