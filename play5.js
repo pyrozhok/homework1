@@ -16,3 +16,6 @@ function play() {
     alert (`Победа ПК!!!\n ПК ответил: ${pcChoice}\n Ваш ответ: ${userChoice}`);
 
 }
+
+
+
