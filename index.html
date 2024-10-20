@@ -14,7 +14,8 @@
             <div class="header__content center">
             <h1 class="header__content-title">Добро пожаловать на мой сайт мини-игр</h1>
             <h2 class="header__content-text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и приступай.</h2>
-            <button class="header__content-button">Поехали!</button>
+    
+            <button class="header__content-button" onclick="scrollAboutGame()">Поехали!</button>
             </div>     
             <div class="linetop">
                 <p class="litetop__text">Викторина</p>
@@ -35,8 +36,8 @@
 
         <section>
               <div class="game center">
-            <div class="game__box">
-                <h3 class="game__box-title">Об играх</h3>
+            <div class="game__box" id="game">
+                <h3 class="game__box-title" >Об играх</h3>
                 <h4 class="game__box-text">В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них может поиграть каждый. <br>
                     Все игры доступны для пользования.</h4>
                 <img class="Starcart" src="image/Starcart.svg" alt="Starcart">
@@ -99,8 +100,8 @@
             </div>
         </div>
 
-        <div class="mini-game center">
-            <div class="mini-game__box">
+        <div class="mini-game center" id="mini-game">
+            <div class="mini-game__box" id="minigames">
                 <h5 class="mini-game__box-title">Мини-игры</h5>
                 <img class="stargame" src="image/Stargame.svg" alt="Stargame">
                 <img class="stargame2" src="image/Stargame2.svg" alt="Stargame2">
@@ -157,7 +158,7 @@
                     <div class="game-content" id="play6">
                         <h5 class="game-content__title">Генератор случайных цветов</h5>
                         <h6 class="game-content__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</h6>
-                        <button class="game-content__button">Играть!</button>
+                        <button class="game-content__button" id="button-game">Играть!</button>
                     </div>        
                 </div>
             </div>
@@ -176,5 +177,42 @@
        <script src="play3.js"></script>
        <script src="play4.js"></script>
 
+       <script>
+    
+    function scrollAboutGame() {
+        if (window.innerWidth >= 768) {
+            const gameEl = document.getElementById('game');
+            gameEl.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            const minigamesEl = document.getElementById('minigames');
+            minigamesEl.scrollIntoView({ behavior: 'smooth' });
+        }
+            
+        }
+
+        // function scrollAboutGame() {
+        //     const gameEl = document.getElementById('game');
+        //     gameEl.scrollIntoView({ behavior: 'smooth' });
+        // }
+            
+
+
+
+    //     function scrollAboutGame() {
+    //     const minigamesEl = document.getElementById('minigames');
+    //     minigamesEl.scrollIntoView({ behavior: 'smooth' });
+    // }
+
+    const btnEl = document.getElementById('button-game');
+    const backgroundEl = document.getElementById('mini-game')
+
+    btnEl.addEventListener('click', function(){
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+    backgroundEl.style.backgroundColor = randomColor;
+    })
+
+   
+    </script>
 </body>
 </html>

@@ -39,6 +39,16 @@ html {
     display: flex;
     align-items: center;
     gap: 51px;
+    padding-left: 49px;
+    animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
 }
 
 .litetop__text {
