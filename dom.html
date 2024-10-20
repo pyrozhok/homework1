@@ -7,14 +7,18 @@
 </head>
 <body>
     <h1 class="title">Lorem, ipsum dolor.</h1>
-    <button class="btn">скрыть</button>
+    <button class="btn">скрыть,показать</button>
     <script>
         const btnElement = document.querySelector('.btn');
         const titleElement = document.querySelector('.title')
 
         btnElement.addEventListener('click', function(){
-            titleElement.remove();
-            document.body.appendChild(titleElement);
+            if (titleElement.style.display === 'none') {
+                titleElement.style.display = 'block';
+    } else {
+        titleElement.style.display = 'none';
+    }
+            
         })    
     </script>
 </body>
@@ -74,6 +78,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Поиск и изменение элементов по классу</title>
+    
 </head>
 <body>
     <p class="description">Lorem ipsum dolor sit amet </p>
@@ -83,8 +88,11 @@
 
     <script>
         const descriptionEl = document.querySelectorAll('.description');
-        descriptionEl.textContent = 'Измененный текст';
-        console.log(descriptionEl)
+    
+        descriptionEl.forEach((element) => {
+            element.textContent = 'Измененный текст';
+        })
+
     </script>
 
 </body>
@@ -105,8 +113,9 @@
     
         <script>
         const descriptionEl = document.querySelectorAll('.description');
-        descriptionEl.textContent = 'Новый текст';
-        console.log(descriptionEl)
+         descriptionEl.forEach((element) => {
+            element.textContent = 'новый текст';
+        })
     </script>
 
 </body>
