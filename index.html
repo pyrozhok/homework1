@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework1</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-        <header class="header ">
-            <div class="header__content center">
+
+    <header class="header ">
+        <div class="header__content center">
             <h1 class="header__content-title">Добро пожаловать на мой сайт мини-игр</h1>
-            <h2 class="header__content-text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и приступай.</h2>
-    
+            <h2 class="header__content-text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
+                «Поехали!» и приступай.</h2>
+
             <button class="header__content-button" onclick="scrollAboutGame()">Поехали!</button>
-            </div>     
-            <div class="linetop">
-                <p class="litetop__text">Викторина</p>
-                <img class="linetop__star" src="image/Starblack.png">
-                <p class="litetop__text">угадай число</p>
-                <img class="linetop__star" src="image/Starblack.png">
-                <p class="litetop__text">Переверни текст</p>
-                <img class="linetop__star" src="image/Starblack.png">
-                <p class="litetop__text">Простая арифметика</p>
-                <img class="linetop__star" src="image/Starblack.png">
-                <p class="litetop__text">Камень, ножницы, бумага</p>
-                <img class="linetop__star" src="image/Starblack.png">
-                <p class="litetop__text">Генератор случайных цветов</p>
-            </div>  
-        </header>
+        </div>
+        <div class="linetop">
+            <p class="litetop__text">Викторина</p>
+            <img class="linetop__star" src="image/Starblack.png">
+            <p class="litetop__text">угадай число</p>
+            <img class="linetop__star" src="image/Starblack.png">
+            <p class="litetop__text">Переверни текст</p>
+            <img class="linetop__star" src="image/Starblack.png">
+            <p class="litetop__text">Простая арифметика</p>
+            <img class="linetop__star" src="image/Starblack.png">
+            <p class="litetop__text">Камень, ножницы, бумага</p>
+            <img class="linetop__star" src="image/Starblack.png">
+            <p class="litetop__text">Генератор случайных цветов</p>
+        </div>
+    </header>
 
-        
-
-        <section>
-              <div class="game center">
+    <section>
+        <div class="game center">
             <div class="game__box" id="game">
-                <h3 class="game__box-title" >Об играх</h3>
-                <h4 class="game__box-text">В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них может поиграть каждый. <br>
+                <h3 class="game__box-title">Об играх</h3>
+                <h4 class="game__box-text">В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в
+                    них может поиграть каждый. <br>
                     Все игры доступны для пользования.</h4>
                 <img class="Starcart" src="image/Starcart.svg" alt="Starcart">
                 <img class="Starcart2" src="image/Starcart2.svg" alt="Starcart2">
@@ -72,13 +75,13 @@
                         </div>
                         <div class="cart">
                             <a href="#play5"><img class="cart5" src="image/cart5.png" alt="cart1"></a>
-                             <div class="cart__content">
-                                 <h5 class="cart__number">Игра № 5</h5>
-                                 <h6 class="cart__text">Простая викторина</h6>
-                             </div>
-                         </div>
+                            <div class="cart__content">
+                                <h5 class="cart__number">Игра № 5</h5>
+                                <h6 class="cart__text">Простая викторина</h6>
+                            </div>
+                        </div>
                     </div>
-                    
+
                     <div class="cart-column">
                         <div class="cart">
                             <a href="#play3"><img class="cart3" src="image/cart3.png" alt="cart1"></a>
@@ -95,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                     
+
                 </div>
             </div>
         </div>
@@ -110,19 +113,19 @@
                         <h5 class="game-content__title">Угадай число</h5>
                         <h6 class="game-content__text">Попробуй угадать случайное <br> число от 1 до 100.</h6>
                         <button onclick="checkGuess()" class="game-content__button">Играть!</button>
-                    </div> 
-                        <img class="cart1" src="image/cart1big.png" alt="cart1">   
+                    </div>
+                    <img class="cart1" src="image/cart1big.png" alt="cart1">
                 </div>
 
-                <div class="game-conteiner mobile">
-                    <a href="#play2"><img class="cart2" src="image/cart2big.png" alt="cart2"></a>
-                    
+                <div class="game-conteiner mobile ">
+                    <img class="cart2" src="image/cart2big.png" alt="cart2">
+
                     <div class="game-content" id="play2">
                         <h5 class="game-content__title">Простая арифметика</h5>
                         <h6 class="game-content__text">Попробуй решить простые арифметические задачи.</h6>
                         <button onclick="userAsk()" class="game-content__button">Играть!</button>
-                    </div> 
-                           
+                    </div>
+
                 </div>
 
                 <div class="game-conteiner">
@@ -130,8 +133,8 @@
                         <h5 class="game-content__title">Переверни текст</h5>
                         <h6 class="game-content__text">Попробуй ввести текст, который будет перевернут.</h6>
                         <button onclick="text()" class="game-content__button">Играть!</button>
-                    </div> 
-                        <img class="cart3" src="image/cart3big.png" alt="cart3">   
+                    </div>
+                    <img class="cart3" src="image/cart3big.png" alt="cart3">
                 </div>
 
                 <div class="game-conteiner mobile">
@@ -140,8 +143,8 @@
                         <h5 class="game-content__title">Викторина</h5>
                         <h6 class="game-content__text">Отвечай на вопросы викторины с вариантами ответов.</h6>
                         <button onclick="runQuiz(quiz)" class="game-content__button">Играть!</button>
-                    </div> 
-                           
+                    </div>
+
                 </div>
 
                 <div class="game-conteiner">
@@ -149,70 +152,56 @@
                         <h5 class="game-content__title">Камень, ножницы, бумага</h5>
                         <h6 class="game-content__text">Сыграй в популярную игру против компьютера.</h6>
                         <button class="game-content__button">Играть!</button>
-                    </div> 
-                    <img class="cart5" src="image/cart5big.png" alt="cart5">      
+                    </div>
+                    <img class="cart5" src="image/cart5big.png" alt="cart5">
                 </div>
 
                 <div class="game-conteiner mobile">
                     <img class="cart6" src="image/cart6big.png" alt="cart6">
                     <div class="game-content" id="play6">
                         <h5 class="game-content__title">Генератор случайных цветов</h5>
-                        <h6 class="game-content__text">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</h6>
+                        <h6 class="game-content__text">Игра, в которой при клике на кнопку фон страницы меняется на
+                            случайный.</h6>
                         <button class="game-content__button" id="button-game">Играть!</button>
-                    </div>        
+                    </div>
                 </div>
             </div>
             <img class="starfooter" src="image/starfooter.svg" alt="starfooter">
             <img class="starfooter2" src="image/starfooter2.svg" alt="starfooter2">
         </div>
 
-        </section>
-            
+    </section>
 
-       <footer class="line">
-            <h7 class="line__text">Все права защищены.</h7>
-       </footer>
-       <script src="play.js"></script>
-       <script src="play2.js"></script>
-       <script src="play3.js"></script>
-       <script src="play4.js"></script>
 
-       <script>
-    
-    function scrollAboutGame() {
-        if (window.innerWidth >= 768) {
-            const gameEl = document.getElementById('game');
-            gameEl.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            const minigamesEl = document.getElementById('minigames');
-            minigamesEl.scrollIntoView({ behavior: 'smooth' });
+    <footer class="line">
+        <h7 class="line__text">Все права защищены.</h7>
+    </footer>
+
+    <script src="play.js"></script>
+    <script src="play2.js"></script>
+    <script src="play3.js"></script>
+    <script src="play4.js"></script>
+
+    <script>
+        function scrollAboutGame() {
+            if (window.innerWidth >= 768) {
+                const gameEl = document.getElementById('game');
+                gameEl.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                const minigamesEl = document.getElementById('minigames');
+                minigamesEl.scrollIntoView({ behavior: 'smooth' });
+            }
         }
-            
-        }
 
-        // function scrollAboutGame() {
-        //     const gameEl = document.getElementById('game');
-        //     gameEl.scrollIntoView({ behavior: 'smooth' });
-        // }
-            
+        const btnEl = document.getElementById('button-game');
+        const backgroundEl = document.getElementById('mini-game')
 
+        btnEl.addEventListener('click', function () {
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
 
-
-    //     function scrollAboutGame() {
-    //     const minigamesEl = document.getElementById('minigames');
-    //     minigamesEl.scrollIntoView({ behavior: 'smooth' });
-    // }
-
-    const btnEl = document.getElementById('button-game');
-    const backgroundEl = document.getElementById('mini-game')
-
-    btnEl.addEventListener('click', function(){
-    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-
-    backgroundEl.style.backgroundColor = randomColor;
-    })
-
-   
+            backgroundEl.style.backgroundColor = randomColor;
+        })
     </script>
 </body>
+
 </html>
