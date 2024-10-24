@@ -134,16 +134,17 @@
     .game-content__title {
         font-size: 25px;
         line-height: 30px;
+        margin-bottom: 18px;
     }
 
     .game-content__text {
-        font-size: 16px;
+        font-size: 14px;
         color: rgb(32, 32, 39);
         font-family: Montserrat;
         font-weight: 400;
         text-align: left;
-        margin-bottom: 15px;
-        line-height: 25px;
+        margin-bottom: 10px;
+        line-height: 20px;
     }
 
     .game-content__button {
@@ -164,8 +165,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 60px;
-        padding-bottom: 100px;
+        padding-bottom: 80px;
     }
 
     .mini-game__box-title {
