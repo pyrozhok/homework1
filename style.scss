@@ -39,6 +39,16 @@ html {
     display: flex;
     align-items: center;
     gap: 51px;
+    padding-left: 49px;
+    animation: scroll 15s linear infinite;
+}
+@keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
 }
 
 .litetop__text {
@@ -74,6 +84,7 @@ html {
     line-height: 78px;
     letter-spacing: 0px;
     text-align: left;
+    margin-bottom: 24px;
 }
 
 .header__content-text {
@@ -115,6 +126,8 @@ html {
 
 .game {
     background-color: black;
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -211,8 +224,10 @@ html {
 }
 
 .mini-game__box {
-    padding-top: 96px;
     padding-bottom: 144px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .mini-game__box-title {
@@ -224,6 +239,7 @@ html {
     letter-spacing: 0px;
     text-align: left;
     margin-bottom: 72px;
+    padding-top: 46px;
 }
 
 .game-content {
@@ -236,7 +252,6 @@ html {
     background-color: white;
     border-radius: 30px;
     justify-content: space-between;
-    margin-bottom: 32px;
 }
 
 .game-content__title {
@@ -286,11 +301,10 @@ html {
 
 .stargame {
     position: absolute;
-    // width: 35.15px;
     max-width: 100%;
     height: 35.15px;
     left: 1281.33px;
-    top: 2363px;
+    top: 93px;
     transform: rotate(7.08deg);
 }
 
@@ -299,7 +313,7 @@ html {
 width: 68.86px;
 height: 68.86px;
 left: 1326.54px;
-top: 2396px;
+top: 126px;
 transform: rotate(5.45deg);
 }
 
@@ -325,9 +339,10 @@ transform: rotate(5.45deg);
     position: absolute;
     width: 584.72px;
     height: 584.72px;
-    left: 905px;
-    top: 945.92px;
+    /* left: 905px; */
+    top: 77px;
     transform: rotate(-6.77deg);
+    right: -143px;
 }
 
 .line {
@@ -390,5 +405,5 @@ height: 150px;
     max-width: 100%;
 }
 
-
+@import 'planshet';
 @import 'mobile';

@@ -1,0 +1,177 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скрытие и показ текста</title>
+</head>
+<body>
+    <h1 class="title">Lorem, ipsum dolor.</h1>
+    <button class="btn">скрыть,показать</button>
+    <script>
+        const btnElement = document.querySelector('.btn');
+        const titleElement = document.querySelector('.title')
+
+        btnElement.addEventListener('click', function(){
+            if (titleElement.style.display === 'none') {
+                titleElement.style.display = 'block';
+    } else {
+        titleElement.style.display = 'none';
+    }
+            
+        })    
+    </script>
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изменение стиля элементаent</title>
+</head>
+<body>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, itaque.</p>
+    <button class="btn">меняй</button>
+    <script>
+        const textEl = document.querySelector('.text');
+        const btnEl = document.querySelector('.btn');
+
+        btnEl.addEventListener('click', function() {
+            textEl.style.color = 'red'
+        })
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динамическое изменение текста</title>
+</head>
+<body>
+    <h1 class="title">Lorem, ipsum dolor.</h1>
+    <button class="btn">жми</button>
+
+    <script>
+        const titleElement = document.querySelector('.title');
+        const btnlement = document.querySelector('.btn');
+
+        btnlement.addEventListener('click', function() {
+            titleElement.textContent = 'Привет, мир!'
+        })
+
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск и изменение элементов по классу</title>
+    
+</head>
+<body>
+    <p class="description">Lorem ipsum dolor sit amet </p>
+    <p class="description">Lorem ipsum dolor sit amet </p>
+    <p class="description">Lorem ipsum dolor sit amet </p>
+    <p class="description">Lorem ipsum dolor sit amet </p>
+
+    <script>
+        const descriptionEl = document.querySelectorAll('.description');
+    
+        descriptionEl.forEach((element) => {
+            element.textContent = 'Измененный текст';
+        })
+
+    </script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с querySelectorAll</title>
+</head>
+<body>
+    <p class="description">Lorem ipsum dolor sit amet </p>
+    <p class="description">Lorem ipsum dolor sit amet </p>
+    <p class="text">Lorem ipsum dolor sit amet </p>
+    <p class="description">Lorem ipsum dolor sit amet </p>
+    
+        <script>
+        const descriptionEl = document.querySelectorAll('.description');
+         descriptionEl.forEach((element) => {
+            element.textContent = 'новый текст';
+        })
+    </script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа с querySelectorAll</title>
+</head>
+<body>
+    
+    <button class="btn">Добавить элемент</button>
+    
+        <script>
+       const btnlement = document.querySelector('.btn');
+       const newText = document.createElement('p');
+       newText.textContent = 'Новый абзац';
+
+       btnlement.addEventListener('click', function() {
+        
+        document.body.appendChild(newText);
+       })
+    </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удаление элемента</title>
+</head>
+<body>
+    <p class="description">первый элемент </p>
+    <p class="text">второй элемент </p>
+    <p class="description">третий элемент </p>
+    <button class="btn">удалить элемент</button>
+
+    <script>
+        const descriptionEl = document.querySelector('.description');
+        const btnlement = document.querySelector('.btn');
+
+        btnlement.addEventListener('click', function() {
+        
+            descriptionEl.remove();
+        
+       })
+
+    </script>
+</body>
+</html> -->

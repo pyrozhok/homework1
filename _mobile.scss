@@ -17,6 +17,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 147px;
+        padding-bottom: 131px;
     }
 
     .header__content-button {
@@ -66,7 +68,10 @@
     }
 
     .mini-game__box {
-        padding-top: 48px;
+        padding-bottom: 49px;
+        display: flex;
+    flex-direction: column;
+    gap: 24px;
     }
 
 
@@ -96,6 +101,7 @@
         line-height: 39px;
         letter-spacing: 0px;
         text-align: left;
+        margin-bottom: 16px;
     }
 
     .game-content__text {
@@ -129,7 +135,18 @@
         line-height: 20px;
         letter-spacing: 0px;
         text-align: center;
-        display: none;
+        width: 375px;
+height: 100px;
+    }
+
+    .line__text {
+        color: rgb(0, 0, 0);
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: center;
     }
 
     .Starcart {
@@ -149,6 +166,14 @@
     }
 
     .stargame2 {
+        display: none;
+    }
+
+    .starfooter {
+        display: none;
+    }
+
+    .starfooter2 {
         display: none;
     }
 
